@@ -105,6 +105,14 @@
   issues do not "pop up" wrt. others).
 -->
 <section name="Tomcat 11.0.0-M15 (markt)" rtext="in development">
+  <subsection name="Catalina">
+    <changelog>
+      <fix>
+        Background processes should not be run concurrently with lifecycle
+        oprations of a container. (remm)
+      </fix>
+    </changelog>
+  </subsection>
   <subsection name="Coyote">
     <changelog>
       <fix>
@@ -116,8 +124,11 @@
   <subsection name="Other">
     <changelog>
       <update>
-        Update the OWB module to Apache OpenWebBeans 4.0.0. (remm)
+        Update the OWB module to Apache OpenWebBeans 4.0.1. (remm)
       </update>
+      <fix>
+        <bug>68124</bug>: Migrate sample.war from javax to jakarta. (lihan)
+      </fix>
     </changelog>
   </subsection>
 </section>
